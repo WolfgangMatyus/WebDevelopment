@@ -8,4 +8,7 @@
     <link rel="stylesheet" href="../css/mystyle.css" type="text/css"/>
 </head>
 <body>
+    <?php
+        session_start();
+    ?>
     

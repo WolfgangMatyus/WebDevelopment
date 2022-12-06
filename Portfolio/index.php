@@ -1,9 +1,8 @@
 <?php
     include 'elements/head.php';
-    ?>
-
+?>
 <?php
-include 'elements/nav.php';
+    include 'elements/nav.php';
 ?>
 
 <div class="header">
@@ -16,19 +15,22 @@ include 'elements/nav.php';
     <ul class="sidebar">
         <a href="#persDaten" class="nav-link
           <?php if(basename($_SERVER['PHP_SELF'])=="index.php#persDaten"){echo 'active';}else{echo '';}//setzt aktiven link active?>
-            "><li>pers. Daten</li></a>
+            "><li>Persönliche Daten</li></a>
         <a href="#pastJob" class="nav-link
-          <?php if(basename($_SERVER['PHP_SELF'])=="index.php#persDaten"){echo 'active';}else{echo '';}//setzt aktiven link active?>
+          <?php if(basename($_SERVER['PHP_SELF'])=="index.php#pastJob"){echo 'active';}else{echo '';}//setzt aktiven link active?>
             "><li>Beruflicher Werdegang</li></a>
         <a href="#school" class="nav-link
-          <?php if(basename($_SERVER['PHP_SELF'])=="index.php#persDaten"){echo 'active';}else{echo '';}//setzt aktiven link active?>
+          <?php if(basename($_SERVER['PHP_SELF'])=="index.php#school"){echo 'active';}else{echo '';}//setzt aktiven link active?>
             "><li>Schulische Laufbahn</li></a>
     </ul>
   </div>
 
   <div class="col-9">
+    <p>
     <?php
-        if(basename($_SERVER['PHP_SELF'])=="index.php#persDaten"){echo '<h1>Perönliche Daten</h1>' . include 'include/TempData/persData.php';;}else{echo '';}?>
+      echo $_SERVER['PHP_SELF'];
+        if(basename($_SERVER['PHP_SELF'])=="index.php#persDaten"){echo '<h1>Perönliche Daten</h1>';}else{echo '';}?>
+    </p>
   </div>
 </div>
 <?php
