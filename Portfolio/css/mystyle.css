@@ -8,13 +8,13 @@ html {
     padding: 15px;
   }
   
-  .menu ul {
+  .sideMenu ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
   }
   
-  .menu li {
+  .sideMenu li {
     padding: 8px;
     margin-bottom: 7px;
     background-color: #33b5e5;
@@ -22,11 +22,11 @@ html {
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   }
   
-  .menu li:hover {
+  .sideMenu li:hover {
     background-color: #0099cc;
   }
 
-  .menu link:active{
+  .sideMenu li:active{
     background-color: #1f00cc;
   }
 
@@ -69,22 +69,110 @@ html {
     body {background: lightcoral;}
  }
 
+ ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
  /* Small devices (portrait tablets and large phones, 600px and up) */
  @media only screen and (min-width: 600px) {
     body {background: green;}
  }
+ ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
  
  /* Medium devices (landscape tablets, 768px and up) */
  @media only screen and (min-width: 768px) {
     body {background: blue;}
  }
+ ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
  
  /* Large devices (laptops/desktops, 992px and up) */
  @media only screen and (min-width: 992px) {
     body {background: orange;}
  }
  
+ ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
  /* Extra large devices (large laptops and desktops, 1200px and up) */
  @media only screen and (min-width: 1200px) {
     body {background: lightskyblue;}
  } 
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
