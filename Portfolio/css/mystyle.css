@@ -1,13 +1,61 @@
 html {
     font-family: "Lucida Sans", sans-serif;
   }
+
+    .row{
+        display: flex;
+    }
   
   .header {
     background-color: #9933cc;
     color: #ffffff;
     padding: 15px;
   }
-  
+
+    #loginPopup-reg {
+        float: left;
+        display: flex;
+        padding: 0;
+        margin: 0;
+    }
+
+    a#loginPopup-reg {
+        color: blue;
+        float: left;
+        display: flex;
+        padding-left: 5px;
+        margin: 0;
+        
+        text-decoration: dotted;
+    }
+
+/* ### Navbars ### */
+
+  .menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+    
+  .menu li {
+    width: 150%;
+    padding: 8px;
+    margin-bottom: 7px;
+    background-color: #33b5e5;
+    color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    border-radius: 5px;
+  }
+
+  .menu li:hover {
+    background-color: #0099cc;
+  }
+
+  .menu li:active{
+    background-color: #1f00cc;
+  }
+
+    /* ### SideNav ### */  
   .sideMenu ul {
     list-style-type: none;
     margin: 0;
@@ -176,3 +224,121 @@ li a {
     padding: 14px 16px;
     text-decoration: none;
   }
+
+
+
+/* ### Login PopUp ### */
+
+.content
+{
+    position:absolute;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+
+.click-me
+{
+  text-align:center;
+  cursor:pointer;
+}
+
+#click
+{
+    display:none;
+}
+
+.click-me:hover
+{
+  color: #0a5878;
+}
+
+#click:checked~.content
+{
+  opacity:1;
+  visibility:visible;
+  box-shadow: 10px 10px rgba(0, 0, 0, 0.432);
+}
+
+.content
+{
+  visibility:hidden;  
+  width: 330px;
+  height: auto;
+  background: #dde1e7;
+  color: blue;
+  margin-top: 30px;
+  padding: 30px 35px 40px;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+#temp
+{
+  position:absolute;
+  right:10px;
+  top:0px;
+  font-size:25px;
+  background: #dde1e7;
+  padding: 3px;
+  padding-left: 11px;
+  padding-right: 11px;
+  border-radius: 50%;
+  cursor:pointer;
+}
+
+.text
+{
+  font-size: 30px;
+  color: #000000;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+label
+{
+  display: block;
+  color: white;
+  margin-top: 14px;
+  margin-bottom: 14px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.loginPopupInput
+{
+  display: block;
+  height: 43px;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 3px;
+  border: none;
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 300;
+}
+::placeholder
+{
+  color: #4b4e4d;
+  padding-left: 10px;
+}
+button
+{
+  width: 100%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 12px;
+  background: #33b5e5;
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: 600;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+button:hover{
+    background: #0099cc;
+    color: #0a5878;
+}
+
