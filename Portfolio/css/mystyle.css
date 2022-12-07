@@ -1,22 +1,39 @@
 html {
     font-family: "Lucida Sans", sans-serif;
   }
+  
+    .header {
+        background-color: #9933cc;
+        color: #ffffff;
+        padding: 15px;
+    }
+
+    .footer{
+        background-color: #9933cc;
+        color: #ffffff;
+        display: flex;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+
+    .nav-item{
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
     .row{
         display: flex;
+        width: 100%;
     }
-  
-  .header {
-    background-color: #9933cc;
-    color: #ffffff;
-    padding: 15px;
-  }
 
     #loginPopup-reg {
         float: left;
         display: flex;
         padding: 0;
-        margin: 0;
+        margin: 3px;
     }
 
     a#loginPopup-reg {
@@ -24,8 +41,7 @@ html {
         float: left;
         display: flex;
         padding-left: 5px;
-        margin: 0;
-        
+        margin-top: 1px;    
         text-decoration: dotted;
     }
 
@@ -38,7 +54,6 @@ html {
   }
     
   .menu li {
-    width: 150%;
     padding: 8px;
     margin-bottom: 7px;
     background-color: #33b5e5;

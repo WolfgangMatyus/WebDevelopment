@@ -1,7 +1,6 @@
 <nav>
-    <div class="row">
-        <ul>
-            <div class="col-1 menu"></div>
+        <ul class="row" >
+
             <div class="col-2 menu">
                 <li class="menu"><a href="index.php">Startseite</a></li>
             </div>
@@ -30,10 +29,9 @@
 
                                 <button>Anmelden</button>
                                     <p><a id="loginPopup-reg" href="pwForgot.php">Du hast dein Passwort vergessen?</a></p>
-                                <div class="row">
-                                    <div class="col">
-                                        <p id="loginPopup-reg">Hier gehts zur <a id="loginPopup-reg" href="signup.php">Registrierung</a>!</p>
-                                    </div>
+                                <div class="col-1 menu"></div>
+                                <div>
+                                    <p id="loginPopup-reg">Hier gehts zur <a id="loginPopup-reg" href="signup.php">Registrierung</a>!</p>
                                 </div>                                
                             </form>
                         </div>
@@ -43,18 +41,18 @@
 
             <div class="col-1 menu"></div>
             <div class="col-2 menu">
-                <li><a href="about.php">Wissensdatenbank</a></li>
+                <li><a href="wdb.php">Wissensdatenbank</a></li>
             </div>
 
             <div class="col-1 menu"></div>
             <div class="col-2 menu">
-                <li><a href="about.php">Warenkorb</a></li>
+                <li><a href="shop.php">Shop</a></li>
             </div>
 
             <div class="col-1 menu"></div>
             <div class="col-2 menu">
-                <li><a href="about.php">Shop</a></li>
+                <li><a href="warenkorb.php">Warenkorb</a></li>
             </div>
+            <div class="col-1 menu"></div>
         </ul>    
-    </div>
 </nav>

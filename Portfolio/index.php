@@ -23,6 +23,12 @@
         <li  class="nav-link 
           <?php if(basename($_SERVER['PHP_SELF'])=="index.php#school"){echo 'active';}else{echo '';}//setzt aktiven link active?>
             "><a href="#school">Schulische Laufbahn</a></li>
+        <li  class="nav-link 
+          <?php if(basename($_SERVER['PHP_SELF'])=="index.php#language"){echo 'active';}else{echo '';}//setzt aktiven link active?>
+            "><a href="#language">Sprachen</a></li>
+        <li  class="nav-link 
+          <?php if(basename($_SERVER['PHP_SELF'])=="index.php#contact"){echo 'active';}else{echo '';}//setzt aktiven link active?>
+            "><a href="#contact">Kontakt</a></li>
     </ul>
   </div>
 
@@ -38,6 +44,31 @@
     </p>
   </div>
 </div>
+<hr>
+
+<h1>ToDos</h1>
+<ul>
+    <li>
+        PHP implementierungen
+    </li>
+    <li>
+        Verlinkungen
+    </li>
+    <li>
+        FAQs
+    </li>
+    <li>
+        Impressum
+    </li>
+    <li>
+        Shop
+    </li>
+    <li>
+        Warenkorb
+    </li>
+
+</ul>
+
 <?php
 
     include 'elements/footer.php';
